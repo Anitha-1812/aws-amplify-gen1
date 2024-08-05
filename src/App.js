@@ -36,7 +36,7 @@ function App() {
     try {
 
       const result = await list({
-            path: `employees/1.png`,
+            path: `uploads/1.png`,
             data: file
             // Alternatively, path: ({identityId}) => `protected/${identityId}/photos/`
           });
@@ -66,7 +66,7 @@ function App() {
       console.log(e);
 
       const result = await uploadData({
-        path: `employees/${file.name}`,
+        path: `uploads/${file.name}`,
         data: file,
         
       });
@@ -128,7 +128,7 @@ function App() {
       
       try {
         const result = uploadData({
-          path: `employees/${file.name}`,
+          path: `uploads/${file.name}`,
           data: file,
       })
         console.log('File uploaded successfully:', result);
